@@ -18,9 +18,6 @@ pipeline {
                         env.CONTAINER = "q3-httpd"
                         env.PORT = "8080"
                     }
-                    else {
-                        error "Unsupported branch: ${env.BRANCH_NAME}"
-                    }
                 }
             }
         }
